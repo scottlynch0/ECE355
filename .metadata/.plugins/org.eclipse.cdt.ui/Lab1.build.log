@@ -1,4 +1,4 @@
-16:31:16 **** Incremental Build of configuration Debug for project Lab1 ****
+17:36:01 **** Incremental Build of configuration Debug for project Lab1 ****
 make all 
 'Invoking: GNU ARM Cross Print Size'
 arm-none-eabi-size --format=berkeley "Lab1.elf"
@@ -7,5 +7,5 @@ arm-none-eabi-size --format=berkeley "Lab1.elf"
 'Finished building: Lab1.siz'
 ' '
 
-16:31:17 Build Finished. 0 errors, 0 warnings. (took 599ms)
+17:36:01 Build Finished. 0 errors, 0 warnings. (took 646ms)
 

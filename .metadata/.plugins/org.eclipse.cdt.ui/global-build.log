@@ -124,3 +124,783 @@ arm-none-eabi-size --format=berkeley "Lab1.elf"
    7131	    180	    412	   7723	   1e2b	Lab1.elf
 'Finished building: Lab1.siz'
 ' '
+17:17:01 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7131	    180	    412	   7723	   1e2b	Lab1.elf
+'Finished building: Lab1.siz'
+' '
+17:32:32 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7131	    180	    412	   7723	   1e2b	Lab1.elf
+'Finished building: Lab1.siz'
+' '
+17:35:45 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7131	    180	    412	   7723	   1e2b	Lab1.elf
+'Finished building: Lab1.siz'
+' '
+17:36:01 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7131	    180	    412	   7723	   1e2b	Lab1.elf
+'Finished building: Lab1.siz'
+' '
+17:38:01 **** Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Building file: ../system/src/stm32f0-stdperiph/stm32f0xx_gpio.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/stm32f0-stdperiph/stm32f0xx_gpio.d" -MT"system/src/stm32f0-stdperiph/stm32f0xx_gpio.o" -c -o "system/src/stm32f0-stdperiph/stm32f0xx_gpio.o" "../system/src/stm32f0-stdperiph/stm32f0xx_gpio.c"
+../system/src/stm32f0-stdperiph/stm32f0xx_gpio.c: In function 'GPIO_DeInit':
+../system/src/stm32f0-stdperiph/stm32f0xx_gpio.c:122:3: warning: implicit declaration of function 'assert_param' [-Wimplicit-function-declaration]
+   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+   ^
+'Finished building: ../system/src/stm32f0-stdperiph/stm32f0xx_gpio.c'
+' '
+'Building file: ../system/src/stm32f0-stdperiph/stm32f0xx_rcc.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/stm32f0-stdperiph/stm32f0xx_rcc.d" -MT"system/src/stm32f0-stdperiph/stm32f0xx_rcc.o" -c -o "system/src/stm32f0-stdperiph/stm32f0xx_rcc.o" "../system/src/stm32f0-stdperiph/stm32f0xx_rcc.c"
+../system/src/stm32f0-stdperiph/stm32f0xx_rcc.c: In function 'RCC_HSEConfig':
+../system/src/stm32f0-stdperiph/stm32f0xx_rcc.c:204:3: warning: implicit declaration of function 'assert_param' [-Wimplicit-function-declaration]
+   assert_param(IS_RCC_HSE(RCC_HSE));
+   ^
+'Finished building: ../system/src/stm32f0-stdperiph/stm32f0xx_rcc.c'
+' '
+'Building file: ../system/src/newlib/_cxx.cpp'
+'Invoking: GNU ARM Cross C++ Compiler'
+arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu++11 -fabi-version=0 -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -MMD -MP -MF"system/src/newlib/_cxx.d" -MT"system/src/newlib/_cxx.o" -c -o "system/src/newlib/_cxx.o" "../system/src/newlib/_cxx.cpp"
+'Finished building: ../system/src/newlib/_cxx.cpp'
+' '
+'Building file: ../system/src/newlib/_exit.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/newlib/_exit.d" -MT"system/src/newlib/_exit.o" -c -o "system/src/newlib/_exit.o" "../system/src/newlib/_exit.c"
+'Finished building: ../system/src/newlib/_exit.c'
+' '
+'Building file: ../system/src/newlib/_sbrk.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/newlib/_sbrk.d" -MT"system/src/newlib/_sbrk.o" -c -o "system/src/newlib/_sbrk.o" "../system/src/newlib/_sbrk.c"
+'Finished building: ../system/src/newlib/_sbrk.c'
+' '
+'Building file: ../system/src/newlib/_startup.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/newlib/_startup.d" -MT"system/src/newlib/_startup.o" -c -o "system/src/newlib/_startup.o" "../system/src/newlib/_startup.c"
+'Finished building: ../system/src/newlib/_startup.c'
+' '
+'Building file: ../system/src/newlib/_syscalls.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/newlib/_syscalls.d" -MT"system/src/newlib/_syscalls.o" -c -o "system/src/newlib/_syscalls.o" "../system/src/newlib/_syscalls.c"
+'Finished building: ../system/src/newlib/_syscalls.c'
+' '
+'Building file: ../system/src/newlib/assert.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/newlib/assert.d" -MT"system/src/newlib/assert.o" -c -o "system/src/newlib/assert.o" "../system/src/newlib/assert.c"
+'Finished building: ../system/src/newlib/assert.c'
+' '
+'Building file: ../system/src/diag/Trace.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/diag/Trace.d" -MT"system/src/diag/Trace.o" -c -o "system/src/diag/Trace.o" "../system/src/diag/Trace.c"
+'Finished building: ../system/src/diag/Trace.c'
+' '
+'Building file: ../system/src/diag/trace_impl.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/diag/trace_impl.d" -MT"system/src/diag/trace_impl.o" -c -o "system/src/diag/trace_impl.o" "../system/src/diag/trace_impl.c"
+'Finished building: ../system/src/diag/trace_impl.c'
+' '
+'Building file: ../system/src/cortexm/_initialize_hardware.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cortexm/_initialize_hardware.d" -MT"system/src/cortexm/_initialize_hardware.o" -c -o "system/src/cortexm/_initialize_hardware.o" "../system/src/cortexm/_initialize_hardware.c"
+'Finished building: ../system/src/cortexm/_initialize_hardware.c'
+' '
+'Building file: ../system/src/cortexm/_reset_hardware.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cortexm/_reset_hardware.d" -MT"system/src/cortexm/_reset_hardware.o" -c -o "system/src/cortexm/_reset_hardware.o" "../system/src/cortexm/_reset_hardware.c"
+'Finished building: ../system/src/cortexm/_reset_hardware.c'
+' '
+'Building file: ../system/src/cortexm/exception_handlers.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cortexm/exception_handlers.d" -MT"system/src/cortexm/exception_handlers.o" -c -o "system/src/cortexm/exception_handlers.o" "../system/src/cortexm/exception_handlers.c"
+'Finished building: ../system/src/cortexm/exception_handlers.c'
+' '
+'Building file: ../system/src/cmsis/system_stm32f0xx.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cmsis/system_stm32f0xx.d" -MT"system/src/cmsis/system_stm32f0xx.o" -c -o "system/src/cmsis/system_stm32f0xx.o" "../system/src/cmsis/system_stm32f0xx.c"
+'Finished building: ../system/src/cmsis/system_stm32f0xx.c'
+' '
+'Building file: ../system/src/cmsis/vectors_stm32f0xx.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cmsis/vectors_stm32f0xx.d" -MT"system/src/cmsis/vectors_stm32f0xx.o" -c -o "system/src/cmsis/vectors_stm32f0xx.o" "../system/src/cmsis/vectors_stm32f0xx.c"
+'Finished building: ../system/src/cmsis/vectors_stm32f0xx.c'
+' '
+'Building file: ../src/_write.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/_write.d" -MT"src/_write.o" -c -o "src/_write.o" "../src/_write.c"
+'Finished building: ../src/_write.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab1Part2.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"Lab1Part2.map" --specs=nano.specs -o "Lab1Part2.elf" ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/main.o   
+'Finished building target: Lab1Part2.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "Lab1Part2.elf"  "Lab1Part2.hex"
+'Finished building: Lab1Part2.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5831	    180	    416	   6427	   191b	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+17:39:02 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5831	    180	    416	   6427	   191b	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+17:46:25 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Building file: ../system/src/stm32f0-stdperiph/stm32f0xx_gpio.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/stm32f0-stdperiph/stm32f0xx_gpio.d" -MT"system/src/stm32f0-stdperiph/stm32f0xx_gpio.o" -c -o "system/src/stm32f0-stdperiph/stm32f0xx_gpio.o" "../system/src/stm32f0-stdperiph/stm32f0xx_gpio.c"
+'Finished building: ../system/src/stm32f0-stdperiph/stm32f0xx_gpio.c'
+' '
+'Building file: ../system/src/stm32f0-stdperiph/stm32f0xx_rcc.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/stm32f0-stdperiph/stm32f0xx_rcc.d" -MT"system/src/stm32f0-stdperiph/stm32f0xx_rcc.o" -c -o "system/src/stm32f0-stdperiph/stm32f0xx_rcc.o" "../system/src/stm32f0-stdperiph/stm32f0xx_rcc.c"
+'Finished building: ../system/src/stm32f0-stdperiph/stm32f0xx_rcc.c'
+' '
+'Building file: ../system/src/diag/trace_impl.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/diag/trace_impl.d" -MT"system/src/diag/trace_impl.o" -c -o "system/src/diag/trace_impl.o" "../system/src/diag/trace_impl.c"
+'Finished building: ../system/src/diag/trace_impl.c'
+' '
+'Building file: ../system/src/cortexm/_initialize_hardware.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cortexm/_initialize_hardware.d" -MT"system/src/cortexm/_initialize_hardware.o" -c -o "system/src/cortexm/_initialize_hardware.o" "../system/src/cortexm/_initialize_hardware.c"
+'Finished building: ../system/src/cortexm/_initialize_hardware.c'
+' '
+'Building file: ../system/src/cortexm/_reset_hardware.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cortexm/_reset_hardware.d" -MT"system/src/cortexm/_reset_hardware.o" -c -o "system/src/cortexm/_reset_hardware.o" "../system/src/cortexm/_reset_hardware.c"
+'Finished building: ../system/src/cortexm/_reset_hardware.c'
+' '
+'Building file: ../system/src/cortexm/exception_handlers.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cortexm/exception_handlers.d" -MT"system/src/cortexm/exception_handlers.o" -c -o "system/src/cortexm/exception_handlers.o" "../system/src/cortexm/exception_handlers.c"
+'Finished building: ../system/src/cortexm/exception_handlers.c'
+' '
+'Building file: ../system/src/cmsis/system_stm32f0xx.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cmsis/system_stm32f0xx.d" -MT"system/src/cmsis/system_stm32f0xx.o" -c -o "system/src/cmsis/system_stm32f0xx.o" "../system/src/cmsis/system_stm32f0xx.c"
+'Finished building: ../system/src/cmsis/system_stm32f0xx.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab1Part2.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"Lab1Part2.map" --specs=nano.specs -o "Lab1Part2.elf" ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/main.o   
+'Finished building target: Lab1Part2.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "Lab1Part2.elf"  "Lab1Part2.hex"
+'Finished building: Lab1Part2.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5831	    180	    416	   6427	   191b	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+17:46:57 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5831	    180	    416	   6427	   191b	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+17:51:25 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'EXTI0_1_IRQHandler':
+../src/main.c:192:16: warning: missing terminating " character
+   trace_printf("We here);
+                ^
+../src/main.c:192:3: error: missing terminating " character
+   trace_printf("We here);
+   ^
+../src/main.c:198:3: error: expected expression before 'if'
+   if(edge_detected)
+   ^
+../src/main.c:229:2: error: expected ';' before '}' token
+  }
+  ^
+../src/main.c:187:17: warning: unused variable 'edge_detected' [-Wunused-variable]
+  static uint8_t edge_detected = 1;
+                 ^
+../src/main.c:185:14: warning: unused variable 'period' [-Wunused-variable]
+  float freq, period;
+              ^
+../src/main.c:185:8: warning: unused variable 'freq' [-Wunused-variable]
+  float freq, period;
+        ^
+../src/main.c:183:18: warning: variable 'count_t' set but not used [-Wunused-but-set-variable]
+  static uint32_t count_t = 0;
+                  ^
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:51:43 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab1Part2.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"Lab1Part2.map" --specs=nano.specs -o "Lab1Part2.elf" ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/main.o   
+'Finished building target: Lab1Part2.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "Lab1Part2.elf"  "Lab1Part2.hex"
+'Finished building: Lab1Part2.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5855	    180	    416	   6451	   1933	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+17:51:52 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5855	    180	    416	   6451	   1933	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+17:53:13 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab1Part2.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"Lab1Part2.map" --specs=nano.specs -o "Lab1Part2.elf" ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/main.o   
+'Finished building target: Lab1Part2.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "Lab1Part2.elf"  "Lab1Part2.hex"
+'Finished building: Lab1Part2.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5919	    180	    416	   6515	   1973	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+17:53:21 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5919	    180	    416	   6515	   1973	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+17:54:05 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab1Part2.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"Lab1Part2.map" --specs=nano.specs -o "Lab1Part2.elf" ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/main.o   
+'Finished building target: Lab1Part2.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "Lab1Part2.elf"  "Lab1Part2.hex"
+'Finished building: Lab1Part2.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5967	    180	    416	   6563	   19a3	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+17:54:30 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab1Part2.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"Lab1Part2.map" --specs=nano.specs -o "Lab1Part2.elf" ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/main.o   
+'Finished building target: Lab1Part2.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "Lab1Part2.elf"  "Lab1Part2.hex"
+'Finished building: Lab1Part2.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6003	    180	    416	   6599	   19c7	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+17:54:39 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6003	    180	    416	   6599	   19c7	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+17:56:23 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab1Part2.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"Lab1Part2.map" --specs=nano.specs -o "Lab1Part2.elf" ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/main.o   
+'Finished building target: Lab1Part2.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "Lab1Part2.elf"  "Lab1Part2.hex"
+'Finished building: Lab1Part2.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6039	    180	    416	   6635	   19eb	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+17:56:33 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6039	    180	    416	   6635	   19eb	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:03:27 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab1Part2.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"Lab1Part2.map" --specs=nano.specs -o "Lab1Part2.elf" ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/main.o   
+'Finished building target: Lab1Part2.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "Lab1Part2.elf"  "Lab1Part2.hex"
+'Finished building: Lab1Part2.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5999	    180	    416	   6595	   19c3	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:03:37 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5999	    180	    416	   6595	   19c3	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:06:12 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab1Part2.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"Lab1Part2.map" --specs=nano.specs -o "Lab1Part2.elf" ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/main.o   
+'Finished building target: Lab1Part2.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "Lab1Part2.elf"  "Lab1Part2.hex"
+'Finished building: Lab1Part2.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5963	    180	    416	   6559	   199f	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:06:20 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5963	    180	    416	   6559	   199f	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:06:34 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5963	    180	    416	   6559	   199f	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:06:42 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5963	    180	    416	   6559	   199f	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:07:12 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5963	    180	    416	   6559	   199f	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:07:42 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5963	    180	    416	   6559	   199f	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:07:48 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5963	    180	    416	   6559	   199f	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:08:59 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5963	    180	    416	   6559	   199f	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:09:06 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5963	    180	    416	   6559	   199f	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:09:24 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5963	    180	    416	   6559	   199f	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:13:53 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Building target: Lab1Part2.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"Lab1Part2.map" --specs=nano.specs -u _printf_float -o "Lab1Part2.elf" ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/main.o   
+'Finished building target: Lab1Part2.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "Lab1Part2.elf"  "Lab1Part2.hex"
+'Finished building: Lab1Part2.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20744	    544	    416	  21704	   54c8	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:14:02 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20744	    544	    416	  21704	   54c8	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:29:06 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab1Part2.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"Lab1Part2.map" --specs=nano.specs -u _printf_float -o "Lab1Part2.elf" ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/main.o   
+'Finished building target: Lab1Part2.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "Lab1Part2.elf"  "Lab1Part2.hex"
+'Finished building: Lab1Part2.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20616	    544	    416	  21576	   5448	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:29:15 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20616	    544	    416	  21576	   5448	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:29:43 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20616	    544	    416	  21576	   5448	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:29:51 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20616	    544	    416	  21576	   5448	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:30:28 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20616	    544	    416	  21576	   5448	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:30:48 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20616	    544	    416	  21576	   5448	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:40:54 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab1Part2.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"Lab1Part2.map" --specs=nano.specs -u _printf_float -o "Lab1Part2.elf" ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/main.o   
+'Finished building target: Lab1Part2.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "Lab1Part2.elf"  "Lab1Part2.hex"
+'Finished building: Lab1Part2.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20616	    544	    416	  21576	   5448	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:41:03 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20616	    544	    416	  21576	   5448	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:43:23 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab1Part2.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"Lab1Part2.map" --specs=nano.specs -u _printf_float -o "Lab1Part2.elf" ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/main.o   
+'Finished building target: Lab1Part2.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "Lab1Part2.elf"  "Lab1Part2.hex"
+'Finished building: Lab1Part2.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20616	    544	    416	  21576	   5448	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:43:31 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20616	    544	    416	  21576	   5448	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:48:57 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab1Part2.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"Lab1Part2.map" --specs=nano.specs -u _printf_float -o "Lab1Part2.elf" ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/main.o   
+'Finished building target: Lab1Part2.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "Lab1Part2.elf"  "Lab1Part2.hex"
+'Finished building: Lab1Part2.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20584	    544	    412	  21540	   5424	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:49:14 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20584	    544	    412	  21540	   5424	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:50:57 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab1Part2.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"Lab1Part2.map" --specs=nano.specs -u _printf_float -o "Lab1Part2.elf" ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/main.o   
+'Finished building target: Lab1Part2.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "Lab1Part2.elf"  "Lab1Part2.hex"
+'Finished building: Lab1Part2.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20616	    544	    416	  21576	   5448	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:51:06 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20616	    544	    416	  21576	   5448	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:53:31 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab1Part2.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"Lab1Part2.map" --specs=nano.specs -u _printf_float -o "Lab1Part2.elf" ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/main.o   
+'Finished building target: Lab1Part2.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "Lab1Part2.elf"  "Lab1Part2.hex"
+'Finished building: Lab1Part2.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20616	    544	    416	  21576	   5448	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:53:44 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20616	    544	    416	  21576	   5448	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:54:24 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab1Part2.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"Lab1Part2.map" --specs=nano.specs -u _printf_float -o "Lab1Part2.elf" ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/main.o   
+'Finished building target: Lab1Part2.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "Lab1Part2.elf"  "Lab1Part2.hex"
+'Finished building: Lab1Part2.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20584	    544	    412	  21540	   5424	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
+18:54:31 **** Incremental Build of configuration Debug for project Lab1Part2 ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "Lab1Part2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20584	    544	    412	  21540	   5424	Lab1Part2.elf
+'Finished building: Lab1Part2.siz'
+' '
