@@ -77,15 +77,12 @@ void myGPIOA_Init()
 
 	/* Configure PA1 as input */
 	// Relevant register: GPIOA->MODER
-	GPIOA->MODER &= ~(0b11<<2);
-	//GPIOA->MODER |= GPIO_MODER_MODER1_0;
+	GPIOA->MODER &= ~(GPIO_MODER_MODER2);
 
 	/* Ensure no pull-up/pull-down for PA1 */
-	// Relevant register: GPIOA->PUPDR
-	GPIOA->PUPDR &= ~(0b11<<2);
-	//GPIOA->PUPDR &= ~(GPIO_PUPDR_PUPDR1);
+	GPIOA->PUPDR &= ~(GPIO_PUPDR_PUPDR2);
 
-	trace_printf("Finished GPIOA init\n");
+	trace_printf("Finished GPIOA initialization\n");
 }
 
 
@@ -99,7 +96,6 @@ void myTIM2_Init()
 	 * enable update events, interrupt on overflow only */
 	// Relevant register: TIM2->CR1
 	TIM2->CR1 |= TIM_CR1_CEN;
-	//TIM2->CR1 |= ((uint16_t)0x008c);
 
 	/* Set clock prescaler value */
 	TIM2->PSC = myTIM2_PRESCALER;
@@ -123,7 +119,7 @@ void myTIM2_Init()
 	// Relevant register: TIM2->DIER
 	TIM2->DIER |= TIM_DIER_UIE;
 
-	trace_printf("Finished TIM2 init\n");
+	trace_printf("Finished TIM2 initialization\n");
 }
 
 
@@ -131,28 +127,28 @@ void myEXTI_Init()
 {
 	/* Map EXTI1 line to PA1 */
 	// Relevant register: SYSCFG->EXTICR[0]
-	SYSCFG->EXTICR[0] |= SYSCFG_EXTICR1_EXTI1_PA;
+	SYSCFG->EXTICR[0] |= SYSCFG_EXTICR1_EXTI2_PA;
 	//SYSCFG->EXTICR[0] |= 0X000;
 
 	/* EXTI1 line interrupts: set rising-edge trigger */
 	// Relevant register: EXTI->RTSR
-	EXTI->RTSR |= EXTI_RTSR_TR1;
+	EXTI->RTSR |= EXTI_RTSR_TR2;
 
 	/* Unmask interrupts from EXTI1 line */
 	// Relevant register: EXTI->IMR
-	EXTI->IMR |= EXTI_IMR_MR1;
+	EXTI->IMR |= EXTI_IMR_MR2;
 	//EXTI->IMR |= 0x100;//|=0x100
 
 	/* Assign EXTI1 interrupt priority = 0 in NVIC */
 	// Relevant register: NVIC->IP[1], or use NVIC_SetPriority
-	NVIC_SetPriority(EXTI0_1_IRQn, 0);
+	NVIC_SetPriority(EXTI2_3_IRQn, 0);
 	//NVIC->IP[1] = 0; try after
 
 	/* Enable EXTI1 interrupts in NVIC */
 	// Relevant register: NVIC->ISER[0], or use NVIC_EnableIRQ
-	NVIC_EnableIRQ(EXTI0_1_IRQn);
+	NVIC_EnableIRQ(EXTI2_3_IRQn);
 
-	trace_printf("Finished EXTI init \n");
+	trace_printf("Finished EXTI initialization \n");
 }
 
 
@@ -177,7 +173,7 @@ void TIM2_IRQHandler()
 
 
 /* This handler is declared in system/src/cmsis/vectors_stm32f0xx.c */
-void EXTI0_1_IRQHandler()
+void EXTI2_3_IRQHandler()
 {
 	// Your local variables...
 	static uint32_t count_t = 0;
@@ -187,7 +183,7 @@ void EXTI0_1_IRQHandler()
 	static uint8_t edge_detected = 1;
 
 	/* Check if EXTI1 interrupt pending flag is indeed set */
-	if ((EXTI->PR & EXTI_PR_PR1) != 0)
+	if ((EXTI->PR & EXTI_PR_PR2) != 0)
 	{
 		//
 		// 1. If this is the first edge:
@@ -212,19 +208,16 @@ void EXTI0_1_IRQHandler()
 		//
 		else
 		{
-			/* Increases max freq from 100kHz to 500kHz, 5% error */
-			//if (count_t < 240000) count_t += 40; /* Delay in system at higher frequencies increases range */
-			//TIM2->CR1 ^= 0x1
+			TIM2->CR1 = TIM_CR1_UDIS;
 			period = (float)count_t/(float)SystemCoreClock;
 			freq = (float)SystemCoreClock/(float)count_t;
-			TIM2->CR1 = TIM_CR1_UDIS;
 			trace_printf("Measured Frequency: %.3E . ",  freq);
 			trace_printf("Measured Period: %.3E\n", period);
 			edge_detected = 1;
 		}
 		// 2. Clear EXTI1 interrupt pending flag (EXTI->PR).
 		//
-		EXTI->PR &= EXTI_PR_PR1;
+		EXTI->PR &= EXTI_PR_PR2;
 	}
 }
 
